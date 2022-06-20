@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title></title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+    
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <section class="rooftop">
+            <div class="container">
+                <div class="rooftopnews">Распродажа! Все хеллоуинские сладости -20%!</div>
+                <div class="logoshop"><img src="images/logoshop.png"></div>
+                <div class="rooftopmenu">
+                    <a href="index.html" class="icon logo"></a>
+                    <div class="searschform"></div>
+                    <a href="#" class="icon login"></a>
+                    <a href="order.html" class="icon order"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="premainhead">
+            <div class="container">
+                <a class="window" id="tort" href="catalog.html">
+                    <p>Торты</p>
+                </a>
+                <a class="window" id="pirozh" href="catalog.html">
+                    <p>Пирожные</p>
+                </a>
+                <a class="window" id="vypechka" href="catalog.html">
+                    <p>Выпечка</p>
+                </a>
+                <a class="window" id="coockies" href="catalog.html">
+                    <p>Печенье</p>
+                </a>
+                <a class="window" id="marmjelly" href="catalog.html">
+                    <p>Мармелад</p>
+                </a>
+            </div>
+        </section>
+        
+        <section>
+            <nav class="topmenu container">
+                <a href="index.html" class="active">Главная</a>
+                <a href="aboutus.html">О нас</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="product.html">Галерея</a>
+                <a href="order.html">Корзина</a>
+                <a href="predzakaz.html">Предзаказ</a>
+                <a href="contacts.html">Контакты</a>
+                
+            </nav>
+        </section>
+    </header>
+    
+    <main>
+        <section class="catalog">
+            <div class="container">
+                <aside class="catmenu">
+                    <div class="opener">КАТАЛОГ <span class="icon cat"></span></div>
+                    <nav class="accordeon">
+                        <ul>
+                            <li class="sub">
+                                <a href="catalog.html">Торты</a>
+                                <ul>
+                                    <li><a href="product.html">Шоколадный</a></li>
+                                    <li><a href="#">Фруктовый</a></li>
+                                    <li><a href="#">Фирменный</a></li>
+                                    <li class="subsub">
+                                        <a href="#">Свадебные</a>
+                                        <ul>
+                                            <li><a href="#">Классика</a></li>
+                                            <li><a href="#">Современность</a></li>
+                                            <li><a href="#">Готика</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="subsub">
+                                        <a href="#">Тематические</a>
+                                        <ul>
+                                            <li><a href="#">Хеллоуин</a></li>
+                                            <li><a href="#">Хеллоуин 2</a></li>
+                                            <li><a href="#">Рождество</a></li>
+                                            <li><a href="#">День Рождения</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Пирожные</a>
+                                <ul>
+                                    <li><a href="#">Эклеры</a></li>
+                                    <li><a href="#">"Картошка"</a></li>
+                                    <li><a href="#">Тарталетки</a></li>
+                                    <li><a href="#">Корзиночки</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Выпечка</a>
+                                <ul>
+                                    <li><a href="#">Круассаны</a></li>
+                                    <li><a href="#">Берлинское печенье</a></li>
+                                    <li><a href="#">Маффины</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Печенье</a>
+                                <ul>
+                                    <li><a href="#">С начинкой</a></li>
+                                    <li><a href="#">Имбирное</a></li>
+                                    <li><a href="#">"Пальцы Ведьмы"</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub">
+                                <a href="#">Мармелад</a>
+                                <ul>
+                                    <li><a href="#">Фирменный</a></li>
+                                    <li><a href="#">Мишки</a></li>
+                                    <li><a href="#">Червячки</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+                
+                <article>
+                    <h1>Каталог товаров</h1>
+                    
+                    <div class="item-desk">
+                        <div class="item" data-href="product.html">
+                            <h3>Торт "Шоколадный"</h3>
+                            <img src="images/torct_choco.jpeg" alt="картинка товара">
+                            <p>Вкуснейший торт. Приготовлен из шоколада ручной работы!</p>
+                            <button type="button">Купить</button>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>Торт "Фруктовый"</h3>
+                            <img src="images/tort_classic.jpeg" alt="картинка товара">
+                            <p>Приготовлен на растительном молоке. Подходит для веганов.</p>
+                            <button type="button" class="buy" onclick="addTovar()">Купить</button>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>Торт "Готика"</h3>
+                            <img src="images/tort_gothic.jpeg" alt="картинка товара">
+                            <p>Изысканный свадебный торт для любителей мрачной экстетики.</p>
+                            <button type="button">Купить</button>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>Торт "Хэллоуин"</h3>
+                            <img src="images/tort_halloween.jpeg" alt="картинка товара">
+                            <p>Праздничный торт для тех, кому мало собрать только конфеты.</p>
+                            <button type="button">Купить</button>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>Торт "Фирменный"</h3>
+                            <img src="images/tort_strawberry.jpeg" alt="картинка товара">
+                            <p>Торт по нашему фирменному рецепту не оставит вас равнодушным</p>
+                            <button type="button">Купить</button>
+                        </div>
+                        
+                        <div class="item">
+                            <h3>Увы =(</h3>
+                            
+                            <p>Пока что здесь пусто. Но, пожалуйста, не переживайте! Очень скоро мы добавим новые товары на сайт</p>
+                            
+                        </div>
+                        
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <section>
+            <div class="container">
+                <nav class="footermenu">
+                    <ul>
+                        <li class="big">Наш адрес:</li>
+                        <li>г. Дальний</li>
+                        <li>Ул. Пушкина 1</li>
+                    </ul>
+                    <ul>
+                        <li class="big">Телефоны:</li>
+                        <li>+7 (901) 111-22-33</li>
+                        <li>+7 (901) 111-44-55</li>
+                    </ul>
+                    <ul>
+                        <li class="big">Предзаказ:</li>
+                        <li><a href="predzakaz.html">Форма предзаказа</a></li>
+                        <li>manager@luchshayapekarnya.ru</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <p class="copy">&copy; ООО "Лучшая Пекарня" - всегда вкусная и свежая выпечка 2022-2023. Все права защищены</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
