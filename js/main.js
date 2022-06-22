@@ -31,18 +31,20 @@ $(function(){
         $('.catmenu .opener').click(function(){
             $('.catmenu').toggleClass('open')
         });
-        $('.accordeon .sub').click(function(){
-            if ($(this).hasClass('open')) {
-                $(this).removeClass('open');
-            } else {
-                $('.accordeon .sub.open').removeClass('open');
-                $(this).addClass('open');
+        $('.accordeon .sub').click(function(e){
+            if ($(e.target).hasClass('sub')) {
+                if ($(this).hasClass('open')) {
+                    $(this).removeClass('open');
+                } else {
+                    $('.accordeon .sub.open').removeClass('open');
+                    $(this).addClass('open');
+                }
             }
         });
         $('.accordeon .sub > a').click(function(e){
             e.stopPropagation();
         });
-        $('.sub .subsub').click(function(){
+        $('.accordeon .subsub').click(function(){
             if ($(this).hasClass('open')) {
                 $(this).removeClass('open');
             } else {
@@ -50,7 +52,7 @@ $(function(){
                 $(this).addClass('open');
             }
         });
-        $('.sub .subsub > a').click(function(e){
+        $('.accordeon .subsub > a').click(function(e){
             e.stopPropagation();
         });
     }
@@ -119,9 +121,30 @@ $(function(){
         });
     }
     
+    $('.totop').click(function(){
+        $('html').animate({scrollTop: 0}, 1000);
+    });
     
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 150) {
+            $('.totop').removeClass('hidden');
+        } else {
+            $('.totop').addClass('hidden');
+        }
+    });
+    $(window).trigger('scroll');
     
-    
-    
+    $(window).on('storage', function(){
+        if (localStorage.getItem('addTovar')) {
+            let sum = 0;
+            for (item of JSON.parse(localStorage.getItem('addTovar'))) {
+                sum += item.qty
+            }
+            $('header .order span').html(sum).removeClass('hidden');
+        } else {
+            $('header .order span').html(0).addClass('hidden');
+        }
+    });
+    $(window).trigger('storage');
     
 });

@@ -8,6 +8,10 @@
     <title></title>
     
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style_tablet.css">
+    
+    <link rel="stylesheet" href="css/style_mobile.css">
     
     <script src="js/jquery-3.6.0.min.js"></script>
     
@@ -43,8 +47,11 @@
             },
         ];
         if (localStorage.getItem('addTovar')) {
-            tovardata.push(JSON.parse(localStorage.getItem('addTovar')));
-            localStorage.removeItem('addTovar');
+            let tovar = JSON.parse(localStorage.getItem('addTovar'));
+            for (let i of tovar) {
+                tovardata.push(i);
+            }
+            //localStorage.removeItem('addTovar');
         }
     </script>
 </head>
@@ -104,9 +111,9 @@
             <div class="table"></div>
 
             <div class="form">
-                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="orderform">
+                <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="orderform" onsubmit="localStorage.removeItem('addTovar');">
                     <fieldset>
-                        <legend>Данные получателя:</legend>
+                        <p>Данные получателя:</p>
                         
                         <input type="text" name="name" id="name" placeholder="Имя">
                         
@@ -118,7 +125,7 @@
                     </fieldset>
                     
                     <fieldset>
-                        <legend>Дата доставки:</legend>
+                        <p>Дата доставки:</p>
                         
                         <input type="text" name="date" id="date" placeholder="ДД-ММ-ГГГГ" autocomplete="off">
                     </fieldset>
@@ -127,9 +134,9 @@
                 </form>
             </div>
             
-            <div id="currency1" class="currency"></div>
-            <div id="currency2" class="currency"></div>
-            <div id="currency3" class="currency"></div>
+            <div id="currency1" class="currency">Актуальный курс доллара: </div>
+            <div id="currency2" class="currency">Актуальный курс евро:</div>
+            <div id="currency3" class="currency">Актуальный курс юаня:</div>
         </div>
     </main>
     

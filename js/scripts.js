@@ -295,3 +295,22 @@ function getCalendar(fieldDate) {
     makeCalendar(fieldDate);
     $('.calendarbox').animate({opacity:1}, 500);
 }
+
+function addTovar(tovar){
+    let basket = JSON.parse(localStorage.getItem('addTovar'));
+    let flag = false;
+    if (basket) {
+        for (let i of basket) {
+            if (i.id == tovar.id) {
+                i.qty += tovar.qty;
+                flag = true;
+                break;
+            }
+        }
+        if (!flag) basket.push(tovar);
+    } else {
+        basket = [tovar];
+    }
+    localStorage.setItem('addTovar', JSON.stringify(basket));
+    $(window).trigger('storage');
+}

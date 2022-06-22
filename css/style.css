@@ -95,13 +95,14 @@ header {
     background: url(../images/header_wood.png);
     background-repeat: repeat;
     color: brown;
+    border-bottom: 2px solid brown;
 }
 
 header section:first-child {
     background: url(../images/header_rooftop.png);
     background-repeat: repeat-x;
     padding-bottom: 5px;
-    color: rebeccapurple;
+    color: brown;
 }
 
 .rooftop .container {
@@ -326,6 +327,7 @@ main {
     width: 620px;
     padding: 16px;
     display: block;
+    color: brown;
 }
 
 /* slider */
@@ -525,12 +527,12 @@ main {
     font-size: 32px;
     line-height: 48px;
     padding: 28px 16px 16px 80px;
-    background: url(../images/platecatalog.png);
-    background-repeat: no-repeat;
+    background-color: white;
     text-align: center;
     color: brown;
     cursor: pointer;
-    border-radius: 16px;
+    border: 2px solid brown;
+    border-radius: 8px;
     margin-bottom: 16px;
     position: relative;
 }
@@ -561,8 +563,8 @@ main {
 .opener:hover::before,
 .opener:hover::after,
 .opener:hover span::before {
-    color: pink;
-    border-color: pink;
+    color: white;
+    background-color: pink;
     text-shadow: 2px brown;
 }
 .open .opener::before,
@@ -586,7 +588,7 @@ main {
 .accordeon .sub {
     padding-right: 24px;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .accordeon .sub::after {
     position: absolute;
@@ -610,21 +612,20 @@ main {
     border: 2px solid brown;
     background-color: #fff;
     color: brown;
-    padding: 8px;
-    bottom: 40px;   
+    padding: 8px;  
 }
 
 .sub a {
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border-radius: 8px; 
     border: 2px solid brown;
     background-color: #fff;
     color: brown;
     padding: 8px;
-    bottom: 40px;   
+    display: block; 
 }
 .accordeon .sub > a:hover {
     text-decoration: underline;
@@ -640,10 +641,15 @@ main {
 
 /* subsub*/
 
+.sub .subsub {
+    position: relative;
+    margin-bottom: 20px;
+}
+
 .sub .subsub::after {
-    /*position: absolute;*/
+    position: absolute;
     width: 24px;
-    right: 0;
+    right: -24px;
     top: 0;
     text-align: center;
     content: '\2b9a';
@@ -657,7 +663,6 @@ main {
 .sub .subsub > a {
     text-transform: uppercase;
     text-decoration: none;
-    margin: 5px;
     margin-left: 30px;
     border-radius: 8px; 
     border: 2px solid brown;
@@ -669,8 +674,6 @@ main {
     text-transform: uppercase;
     text-decoration: none;
     margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 8px; 
     border: 2px solid brown;
     background-color: #fff;
@@ -748,7 +751,7 @@ main {
     cursor: pointer;
 }
 .mini > span:hover {
-    color: red;
+    color:pink;
 }
 .mini > span.disabled {
     color: lightgray;
@@ -779,6 +782,7 @@ main {
     top: 50%;
     padding: 16px;
     border-radius: 16px;
+    border: 2px solid brown;
     background: white;
     opacity: 0;
 }
@@ -805,7 +809,7 @@ main {
 .lightbox button:hover,
 .calendarbox button:hover,
 .alertbox button:hover {
-    color: yellow;
+    color: pink;
 }
 .calendarbox span {
     flex: none;
@@ -814,14 +818,14 @@ main {
     display: block;
     line-height: 48px;
     text-align: center;
-    border: 1px solid gray;
-    color: gray;
+    border: 1px solid brown;
+    color: brown;
 }
 .calendarbox strong {
     flex: auto;
     line-height: 48px;
     text-align: center;
-    color: gray;
+    color: brown;
 }
 .calendarbox .dp_header {
     display: flex;
@@ -836,8 +840,8 @@ main {
     grid-template-columns: repeat(7, 50px);
 }
 .calendarbox .holiday {
-    color: red;
-    border-color: red;
+    color: pink;
+    border-color: pink;
 }
 .calendarbox .headday {
     border-color: transparent;
@@ -917,14 +921,20 @@ main {
 }
 .currency {
     margin-top: 16px;
+    color: brown;
+    background-color: #fff;
+    border: 2px solid brown;
+    border-radius: 8px;
+    padding: 16px;
 }
 fieldset {
     margin: 16px 0;
     border: 2px solid brown;
+    border-radius: 8px;
     padding: 16px;
     background-color: #fff;
 }
-legend {
+fieldset p {
     font-weight: bold;
     color: brown;
 }
@@ -946,16 +956,22 @@ textarea {
     height: 60px;
     width: 250px;
 }
-legend + input {
-    margin: 0;
-}
+
 .sendform {
     display: block;
     width: 200px;
     padding: 16px;
-    background: red;
-    color: white;
+    color: brown;
     cursor: pointer;
+    border: 2px solid brown;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #fff;
+}
+
+.sendform:hover {
+    background-color: pink;
+    color: white;
 }
 
 /* contacts */
@@ -973,6 +989,35 @@ legend + input {
 
 .contactsblock div {
     color: brown;
+}
+
+/* predzakaz */
+
+#form1 fieldset {
+    border: 2px solid brown;
+    border-radius: 8px;
+    color: brown;
+    display: block;
+}
+
+#form1 fieldset input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+#form1 button {
+    border: 2px solid brown;
+    border-radius: 8px;
+    background-color: #fff;
+    color: brown;
+    padding: 16px;
+}
+
+#form1 button:hover {
+    color: white;
+    background-color: pink;
+    cursor: pointer;
 }
 
 

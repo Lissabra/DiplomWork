@@ -1,0 +1,232 @@
+﻿@media screen and (max-width: 760px) {
+    body {
+        min-width: 320px;
+    }
+    .container {
+        width: auto;
+        min-width: 288px;
+        margin: 0 16px;
+    }
+    .rooftopnews {
+        height: 64px;
+    }
+
+    .rooftopmenu {
+        display: inline-block;
+    }
+
+    .premainhead .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .window {
+        width: 100px;
+        height: 75px;
+    }
+
+    .window p {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    #tort {
+        background-size: contain;
+    }
+    
+    #pirozh {
+        background-size: contain;
+    }
+    
+    #vypechka {
+        background-size: contain;
+    }
+    
+    #coockies {
+        background-size: contain;
+    }
+    
+    #marmjelly {
+        background-size: contain;
+    }
+
+    header nav {
+        display: flex;
+        gap: 5px;
+        justify-content: space-around;
+    }
+    header nav a {
+        height: 20px;
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    .discount,
+    .retaimer,
+    .sept,
+    .num {
+        font-size: 14px;
+    }
+
+    .retaimer {
+        padding: 24px 0 0 24px;
+        margin-left: 12px;
+    }
+
+    .toptext {
+        left: 12px;
+    }
+    .sept {
+        padding: 6px 0;
+    }
+    .num {
+        padding-bottom: 12px;
+        min-width: 40px;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+    
+    .slider .container {
+        width: 250px;
+        height: 165px;
+        padding: 8px 32px;  
+    }
+    
+    .slider_desk,
+    .slider_block {
+        width: 250px;
+        height: 165px;
+    }
+    
+    .slider button {
+        position: absolute;
+        height: 98px;
+        width: 50px;
+        border-radius: 8px;
+        text-align: center;
+        top: 60px;
+    }
+    .slider .to_left {
+        left: -30px;
+        background: url(../images/coockie_toleft.png);
+        background-repeat: no-repeat;
+    }
+    .slider .to_right {
+        right: 5px;
+        background: url(../images/coockie_toright.png);
+        background-repeat: no-repeat;
+    }
+    .slider_points {
+        position: absolute;
+        z-index: 1;
+        width: 250px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        top: 115px;
+        left: 40px;
+    }
+    
+    .slider_block p {
+        background-color: transparent;
+        background-size: contain;
+    }
+    
+    #sale1 p {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+
+    #newsblock {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+
+
+
+    .catalog aside,
+    .product aside {
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .catalog article,
+    .product article {
+        margin-left: 100px;
+    }
+
+    .item-desk {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item {
+        width: 135px;
+        height: 200px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .item img {
+        max-width: 75px;
+    }
+
+    .item p {
+        display: none;
+    }
+
+    .buy,
+    .item button {
+    top: 200px;
+    background: white;
+    color: brown;
+    font-size: 24px;
+    line-height: 3-px;
+    padding: 6px 10px;
+    
+    }
+
+    .opener {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 6px 6px 10px;
+    }
+
+    .opener::before,
+    .opener::after {
+        display:none
+    }
+
+    .accordeon {
+        font-size: 12px;
+    }
+
+    .sub a {
+        margin-left: 7px;
+    }
+    .sub .subsub > a {
+        margin-left: 7px;
+    }
+
+    .subsub a {
+        margin-left: 15px;
+    }  
+
+    .contactsblock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+}
+
+    

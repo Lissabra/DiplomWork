@@ -1,0 +1,172 @@
+﻿@media screen and (max-width: 1200px) {
+    .container {
+        width: 704px;
+    }
+   
+    h1 {
+        font: bold 24px/36px 'roboto';
+    }
+
+    .rooftopnews {
+        font-size: 12px;
+    }
+
+    .rooftopmenu {
+        display: grid;
+        grid-template-columns: 10% 70% 10% 10%;
+    }
+
+    .rooftopmenu a {
+        display: block;
+    }
+
+    .searschform {
+        margin-left: 5px;
+        margin-right: 5px; 
+    }
+
+    .premainhead .container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .window {
+        width: 100px;
+        height: 75px;
+    }
+
+    .window p {
+        padding-top: 10px;
+        font-size: 10px;
+    }
+
+    #tort {
+        background-size: contain;
+    }
+    
+    #pirozh {
+        background-size: contain;
+    }
+    
+    #vypechka {
+        background-size: contain;
+    }
+    
+    #coockies {
+        background-size: contain;
+    }
+    
+    #marmjelly {
+        background-size: contain;
+    }
+
+    .footermenu {
+        font-size: 12px;
+    }
+
+    .footermenu ul {
+        width: 200px;
+    }
+
+    .discount,
+    .retaimer,
+    .sept,
+    .num {
+        font-size: 26px;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        width: 704px;
+    }
+
+    #newsblock {
+        height: 130px;
+    }
+
+    .catalog aside,
+    .product aside {
+        width: 175px;
+    }
+
+    .catalog article,
+    .product article {
+        margin-left: 100px;
+    }
+
+    .item {
+        width: 140px;
+        height: 200px;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    .item img {
+        max-width: 75px;
+    }
+
+    .item p {
+        display: none;
+    }
+
+    .buy,
+    .item button {
+    top: 200px;
+    background: white;
+    color: brown;
+    font-size: 24px;
+    line-height: 3-px;
+    padding: 6px 10px;
+    
+    }
+
+    .opener {
+        font-size: 24px;
+        line-height: 20px;
+        padding: 20px 12px 12px 20px;
+    }
+
+    .opener::before,
+    .opener::after {
+        display:none
+    }
+
+    .accordeon {
+        font-size: 12px;
+    }
+
+    .sub a {
+        margin-left: 15px;
+    }
+
+    .sub .subsub > a {
+        margin-left: 15px;
+    }
+
+    .subsub a {
+        margin-left: 30px;
+    }  
+
+    .product article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bigimage img {
+        max-width: 200px;
+    }
+
+    .mini {
+        width: 210px;
+    }
+
+    .pricedesk button {
+        max-width: 100px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+}    

@@ -8,6 +8,10 @@
     <title></title>
     
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style_tablet.css">
+    
+    <link rel="stylesheet" href="css/style_mobile.css">
     
     <script src="js/jquery-3.6.0.min.js"></script>
     
@@ -65,7 +69,34 @@
     </header>
     
     <main>
-       Пока здесь ничего нет, но скоро обязательно будет =)
+       <section>
+           <div class="container">
+            <form action="#" method="post" name="predzakazform" id="form1">
+                <fieldset>
+                    <p>Ваше имя?</p>
+                    <input type="text" name="name1"> 
+                    <p>Опишите ваши пожелания к предзаказу</p>
+                    <p><textarea rows="5" cols="30" name="text" form="form1" placeholder="Я бы хотел..."></textarea></p>
+                </fieldset>
+               
+                <fieldset>
+                    <p>Способы обратной связи с Вами</p>
+                    <input type="tel" name="telep"> Ваш телефон <br>
+                    <input type="url" name="social"> Ваша страничка в соцсетях <br>
+                    <input type="email" name="mail"> Ваш e-mail <br>
+        
+                    <p>Наш менеджер свяжется с вами и обговорит дату доставки!</p>
+                </fieldset>
+
+                <fieldset> <p><b>Небольшой опрос. Понравился ли вам ассортимент товаров в нашем магазине? (от 1 до 10)</b></p>
+                    <input type="range" min="1" max="10" name="like" id="like">
+                <fieldset>
+          
+                <button type="submit" form="form1">Отправить</button>
+                <button type="reset" form="form1">Очистить</button>
+            </form>
+           </div>
+       </section>
     </main>
     
     <footer>

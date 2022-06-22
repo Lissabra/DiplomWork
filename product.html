@@ -8,6 +8,10 @@
     <title></title>
     
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/style_tablet.css">
+    
+    <link rel="stylesheet" href="css/style_mobile.css">
     
     <script src="js/jquery-3.6.0.min.js"></script>
     
@@ -16,9 +20,12 @@
     <script src="js/main.js"></script>
     
     <script>
-    function addTovar(){
-        localStorage.setItem('addTovar', '{"id":4,"qty":1,"name":"Торт Шоколадный","price": 6000}');
-    }
+        let tovar = {
+        id: 4,
+        name: 'Торт Шоколадный',
+        price: 6000,
+        qty: 1
+        }
     </script>
 </head>
 <body>
@@ -169,7 +176,7 @@
                     <div class="pricedesk">
                         <p class="big">Торт "Шоколадный"</p>
                         <p class="price">6000 &#8381;</p>
-                        <button type="button" class="buy" onclick="addTovar()">Купить</button>
+                        <button type="button" class="buy" onclick="addTovar(tovar)">Купить</button>
                     </div>
                     
                     <div class="descriptions"></div>
